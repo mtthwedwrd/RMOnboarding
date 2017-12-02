@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/toastr.min.css">
+  <link rel="stylesheet" href="assets/DataTable/datatables.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/disable.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link href="assets/Rating/css/star-rating.min.css" media="all" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="assets/select2-4.0.3/css/select2.min.css">
+  <link rel="stylesheet" href="assets/tagsinput/bootstrap-tagsinput.css">
+  <noscript>
+    <META HTTP-EQUIV="Refresh" CONTENT="0;URL=protected.html">
+  </noscript>
+</head>
+
+<body>
+    
+<div class="container">
+    <div>
+        <a><img style="width: 122px; height: 61px;margin: 20px; "class="logo" alt="rmlogo" src="assets/image/rmlogo.png"></a>
+        <div style="color: white;">
+           <div class="pull-right"  style="margin-top: -75px">
+                <ul class="nav nav-pills">
+                    <li role="presentation"><a href="profilep.html">FEATURE</a></li>
+                    <li role="presentation"><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <p style="margin-top: 62px; margin-left: 65px; color: white;font-size:15pt; ">Fill out the form below to login.</p>
+    
+    <div class="col-md-6">
+        
+    <div  id="login" class="form-group">
+        <form id="login" action="CONFIG.php" method="post">    
+        <input style="margin-top:5px; margin-left: 54px; max-width: 300px;" type="text" name="username" class="form-control" placeholder="User ID">
+        <input style="margin-top:5px; margin-left: 54px;max-width: 300px; "  type="password" name="password" class="form-control" placeholder="Password">
+        <div class="col-md-2" style="margin-left: -10px;margin-top: 5px;">
+        <button onclick="document.getElementById('login').style.display='block'" class="rm-button"><a href="profile.html" style="color: white;" >SIGN IN</a></button>
+            </div>
+          </form>
+         <div class="col-md-3" style="margin-left: 90px;margin-top: 5px;">
+            <button onclick="document.getElementById('id01').style.display='block'" class="rm-button"><a style="color: white;" >SIGN UP</a></button>
+        </div>
+        </div>
+        
+       
+        
+        
+<!--SIGN up form----->
+<div id="id01" class="modal">
+ 
+  <form id="sign_up" class="modal-content animate" method="POST" action="connection1.php">
+   
+    <div class="signup-cont">
+        <p style="color: aliceblue;">SIGN UP FORM</p>
+    <div class="form-group">
+    <input style="margin-bottom: 5px;" class="form-control" type="text" placeholder="Enter Name" name="name" required>    
+        
+      <input style="margin-bottom: 5px;" class="form-control" type="text" placeholder="Enter ID" name="ID" required>
+
+     
+      <input style="margin-bottom: 5px;" class="form-control" type="password" placeholder="Enter Password" name="password" required>
+
+     
+      <input style="margin-bottom: 10px;" class="form-control" type="password" placeholder="Repeat Password" name="confirm" required>
+        </div>
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" name="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+        
+        <div class="col-md-4" style="width: 420px;  margin-left:38px; margin-top: 65px;">
+        <p style="color: white; font-size:24pt;">RM ONBOARDING AND VOLUME TRACKER</p>
+        </div>
+    
+    </div>
+    <!--<section class="col-md-12 loader"></section>-->
+      <div class="clearfix"></div>
+    
+ 
+    
+    </div>
+   
+</body>
+</html>
+    
+<script src="assets/js/jquery-3.2.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/toastr.min.js"></script>
+<script src="assets/js/jquery.numeric.min.js"></script>
+<script src="assets/DataTable/datatables.min.js"></script>
+<script src="assets/Rating/js/star-rating.min.js"></script>
+<script src="assets/ckeditor/ckeditor.js"></script>
+<script src="assets/ckfinder/ckfinder.js"></script>
+<script src="assets/ckeditor/adapters/jquery.js"></script>
+<script src="assets/js/disable-console.js"></script>
+<script src="assets/js/ellipsis.js"></script>
+<script src="assets/js/bootstrap-filestyle.min.js"></script>
+<script src="assets/select2-4.0.3/js/select2.full.min.js"></script>
+<script src="assets/tagsinput/bootstrap-tagsinput.min.js"></script>
+<script src="script.js"></script>
+<script src="script.php"></script>
+    
+<style>
+    .container {
+    
+    background-image: url(assets/image/FinalMainPage.png);
+    
+    width: 1000px;
+    height: 700px;
+}
+    
+</style>
+    
+

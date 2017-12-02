@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    
+    <meta charset="utf-8">
+    <title>RM System</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/toastr.min.css">
+    <link rel="stylesheet" href="assets/DataTable/datatables.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/disable.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="assets/Rating/css/star-rating.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/select2-4.0.3/css/select2.min.css">
+    <link rel="stylesheet" href="assets/tagsinput/bootstrap-tagsinput.css">
+    <noscript>
+    <META HTTP-EQUIV="Refresh" CONTENT="0;URL=protected.html">
+  </noscript>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-1">   
+            <div style="background-color: #050f66; width: 220px;height: 100%;text-align: left;" class="col-xs-6 col-md-4">
+                <div style="text-align: center;">
+                <a><img style="width: 50px; height:auto;margin-top: 15px; margin-bottom: 30px;" alt="rmlogo" src="assets/image/rmlogo.png"></a>
+                </div>
+                <p style="color: aliceblue; font-weight: 620; letter-spacing: 0.4pt;"><span style="margin-right: 10px;" class="glyphicon glyphicon-user" aria-hidden="true"></span>Hello Lorem Ipsum<div id="name"></div></p>          
+            <br>
+            <br>
+           <div class="side-nav-main">
+                <p class="side-nav"><a href="home.html" ><span style="margin-right: 20px;" class="glyphicon glyphicon-time" aria-hidden="true"></span>Dashboard</a></p>
+                
+                <p  class="side-nav"><a href="casa.html"><span style="margin-right: 20px;" class="glyphicon glyphicon-home" aria-hidden="true"></span>Casa Monitoring</a></p>
+                <p  class="side-nav"><a href="activity.html" style="color: aliceblue;"><span style="margin-right: 20px;" class="glyphicon glyphicon-th-list" aria-hidden="true"></span>Activity Log</a></p>
+                <p  class="side-nav-active"><a href="analytics.html"><span style="margin-right: 20px;" class="glyphicon glyphicon-signal" aria-hidden="true"></span>Analytics</a></p>
+                <p  class="side-nav"><a href="index.html"><span style="margin-right: 20px;" class="glyphicon glyphicon-log-out" aria-hidden="true"></span>Logout</a></p>
+            </div>
+        </div>
+    
+        <!-----------------------------------------start right-------------------------------------------->
+    <div class="container-2">
+        <div class="col-xs-12 col-sm-6 col-lg-8" style="background-color: whitesmoke; width: 780px; height: auto;">
+            <h1>Analytics</h1>
+            
+             <div class="row" style="background-color:#ffbb99;">
+            
+            <table id="recent" class="my-accounts" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+          <th><div class="navbar-form trhead">Filter</div></th>
+      
+        <th>  
+            <div class="navbar-form trhead">
+                    <div class="dropdown" style="margin-left: -80px; margin-top: 8px;">Type
+                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <a href="javascript:void(0)">
+                             Show All</a>
+                       
+                        <span class="caret"></span>
+                            </button>
+                    <a href="javascript:void(0)" class="dropbtn"></a>
+    <div class="dropdown-content" style="align-content: center;">
+      <a href="#">Increased Accounts</a>
+      <a href="#">Decreased Accounts</a>
+    </div>
+            </div>
+          </th>
+          <th>  
+            <div class="navbar-form trhead">
+                    <div class="dropdown" style="margin-left: -80px; margin-top: 8px;">Time
+                         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <a href="javascript:void(0)">
+                             Montthly</a>
+                       
+                        <span class="caret"></span>
+                            </button>
+                    <a href="javascript:void(0)" class="dropbtn"></a>
+    <div class="dropdown-content" style="align-content: center;">
+      <a href="#">Yearly</a>
+      <a href="#">Weekly</a>
+    </div>
+            </div>
+          </th>
+        <th style="width: 30px;">
+            <div class="navbar-form navbar-right">
+            <input style="height: 30px; margin-top:0px; margin-left: 54px; max-width: 150px;" class="form-control" type="text" placeholder="Search">
+                        <button class="btn btn-default btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        <span style="margin-top: -100px;" class="glyphicon glyphicon-search col" aria-hidden="true"></span>
+                        </button>
+            </div>
+        </th>
+      </tr>
+    </thead>
+            </table>   
+            </div>
+ 
+    <div class="col-md-12">
+        <h2 style="color: gray;"><span>YOUR ACCOUNTS</span></h2>
+    
+    <div class="row">
+       
+        <div class="panel panel-default" style="width: auto; max- height: auto;">
+            <div style="text-align: center; margin-top: 10px;">
+           	<canvas  id="canvas" width="220" height="120"></canvas>
+            </div>
+        </div>
+        
+        
+        </div>
+        <div class="col-xs-6 col-md-6">
+            <div class="panel panel-default" style="width: auto;">
+            <div class="panel-heading"><b>TOP INCREASE ACCOUNTS</b><p><a href="#">View all</a></p></div>
+        
+    <table id="recent" class="table" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th>Account Number</th>
+        <th>Account Name</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0123</td>
+            <td>Lee Kristian</td>
+            <td>110,000</td>
+        </tr>
+        <tr>
+            <td>0123</td>
+            <td>Lee Kristian</td>
+            <td>110,000</td>
+        </tr>
+        <tr>
+            <td>0123</td>
+            <td>Lee Kristian</td>
+            <td>110,000</td>
+        </tr>
+    </tbody>
+  </table>
+           
+        </div>
+        </div>
+        
+        <div class="col-xs-6 col-md-6">
+            <div class="panel panel-default" style="width: auto;">
+            <div class="panel-heading"><b>TOP DECREASE ACCOUNTS</b><p><a href="#">View all</a></p></div>
+         <table id="recent" class="table" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th>Account Number</th>
+        <th>Account Name</th>
+        <th>Total</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>0123</td>
+            <td>Lee Kristian</td>
+            <td>110,000</td>
+        </tr>
+        <tr>
+            <td>0123</td>
+            <td>Lee Kristian</td>
+            <td>110,000</td>
+        </tr>
+        <tr>
+            <td>0123</td>
+            <td>Lee Kristian</td>
+            <td>110,000</td>
+        </tr>
+    </tbody>
+  </table>
+           
+        </div>
+        </div>
+       
+        
+            </div>
+            <div class="clearfix"></div>
+      
+           </div>
+            
+            </div>
+     
+    </div>
+</body>
+    </html>
+<style>
+    .container{
+        background-color: #050f66;
+        height: auto;
+    }
+</style>
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/Chart.js"></script>
+    <script type="text/javascript" src="assets/Chart.js/Chart.js"></script>
+    <script type="text/javascript" src="assets/Chart.js/Chart.min.js"></script>
+    <script type="text/javascript" src="assets/Chart.js/Chart.bundle.js"></script>
+    <script type="text/javascript" src="assets/Chart.js/Chart.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/Chart.js/samples/utils.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="assets/DataTable/datatables.min.js"></script>
+ 
+ <script type="text/javascript" charset="utf-8" async defer>
+      myChart();       
+</script>
+	
